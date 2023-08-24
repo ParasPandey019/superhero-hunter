@@ -1,7 +1,7 @@
 let PUBLIC_KEY = "1a42561ede3c3bfd9f9fab8aeeee5d4a";
 let PRIVATE_KEY = "c42a824b5adae0d21e2d17ef0bf6f5bc3d3095b4";
 const timestamp = new Date().getTime();
-const urlpath = "http://gateway.marvel.com/v1/public/";
+const urlpath = "https://gateway.marvel.com/v1/public/";
 const hash = CryptoJS.MD5(`${timestamp}${PRIVATE_KEY}${PUBLIC_KEY}`).toString();
 
 const homePage = document.getElementById("home-page");
