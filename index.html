@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" height="40px">
+            <a id="home-link" onclick="toggleHome()">Home</a>
+            <a  id="fav-link" onclick="toggleFavs()">Favourites</a>
+        </div>
+        <input name="search" type="search" placeholder="Search" id="search-bar">
+    </div>
+    <div id="home-page">
+        <div id="banner">
+            <div id="banner-overlay"></div>
+            <div id="scroll-down-container">
+                <div id="scroll-down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+                          bottom: 25px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: antiquewhite; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></div>
+                          <div id="scroll-down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+                          bottom: 40px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: antiquewhite; animation: scrolldown 1.2s ease-in-out infinite;"></div>
+            </div>
+        </div>
+        <div id="cardsList">
+            <!-- <div class="card">
+                <img src="">
+                <p class="name"></p>
+            </div> -->
+        </div>
+    </div>
+    <div id="search-page">
+        <img src="./back.png" class="back-button" onclick="toggleHome()">
+        <div id="search-results">
+             <!-- <div class="card">
+                <img src="">
+                <p class="name"></p>
+            </div> -->
+        </div>
+    </div>
+    <div id="favourites-page">
+        <div id="favourites">
+            <!-- <div class="card">
+                <img src="">
+                <p class="name"></p>
+            </div> -->
+        </div>
+    </div>
+    <div id="hero-info-page">
+        <img src="./back.png" class="back-button" id="hero-info-back" onclick="handleInfoBackButton()">
+        <div id="hero-info-container">
+            <!-- <img src="http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04.jpg" class="hero-info-img">
+            <div class="hero-info-text">
+                <p>Abomination (Emil Blonsky)</p>
+                <p>Formerly known as Emil Blonsky, a spy of Soviet Yugoslavian origin working 
+                    for the KGB, the Abomination gained his powers after receiving a dose of 
+                    gamma radiation similar to that which transformed Bruce Banner into the 
+                    incredible Hulk.
+                </p>
+                <p>Total comics available and gice url</p>
+                <p></p>
+            </div> -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+body{
+    margin: 0;
+    background: url("https://e0.pxfuel.com/wallpapers/29/450/desktop-wallpaper-black-and-white-marvel-marvel-comic-sticker-bomb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* navbar-css */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.899);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar>div{
+    display: flex;
+    align-items: center;
+}
+
+#fav-link, #home-link{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar>img{
+    margin-left: 5px;
+}
+
+#search-bar{
+    height: 40px;
+    margin: 7px 15px 7px 0;
+    width: 250px;
+}
+
+#search-bar::-webkit-search-decoration,
+#search-bar::-webkit-search-cancel-button,
+#search-bar::-webkit-search-results-button,
+#search-bar::-webkit-search-results-decoration { display: none; }
+
+
+/* banner css */
+#banner{
+    background-image: url("https://wallpaperaccess.com/full/200849.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#banner-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(244,244,244,0) 80%);
+}
+
+#scroll-down{
+    left: 50%;
+    transform: translateY(0%) rotate(45deg);
+    
+                  opacity: 0;
+  }
+  @keyframes scrolldown {
+              0%{
+                  transform: translateY(20%) rotate(45deg);
+                  opacity: 0.7;
+              }
+              50%{
+                  transform: translateY(0%) rotate(45deg);
+                  opacity: 0.2;
+              }
+              100%{
+                  transform: translateY(20%) rotate(45deg);
+                  opacity: 0.7;
+              }
+          }
+
+
+
+
+
+/* cards-list */
+#cardsList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.cards-container{
+    min-width: 275px;
+    width: 23%;
+    background-color: rgb(149, 5, 5);
+    height: 50vh;
+    margin: 1%;
+}
+
+.cards{
+    width: 100%;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+.card-image{
+    width: 100%;
+    height: 44vh;
+    cursor: pointer;
+}
+
+.card-name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favourites-icon{
+    width: 25px;
+    height: 25px;
+    padding: 2.5px;
+    margin-right: 7px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.favourites-icon:hover{
+    background-color: black;;
+}
+
+
+.name{
+    margin-left: 15px;
+    font-size: 1.2rem;
+    margin: 0;
+    margin: 5px 0 5px 15px;
+}
+
+
+/* search-results page */
+
+#search-page{
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 40px;
+    padding: 20px;
+    display: none;
+}
+
+#search-results{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+}
+
+
+/* hero info page */
+#hero-info-page{
+    display: none;
+    margin-top: 90px;
+    height: 82vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding:20px;
+}
+
+#hero-info-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hero-img{
+    height: 100%;
+}
+
+#hero-info-text{
+    width: 45%;
+}
+
+#hero-name{
+    font-size: 3rem;
+    margin: 35px 0;
+}
+
+#hero-description{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+.back-button{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.count-info{
+    font-size: 1.3rem;
+    margin: 25px 0 5px 0;
+}
+
+.count-data{
+    margin: 0;
+    color: rgb(158, 145, 145);
+}
+
+/* favourites page*/
+#favourites-page{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    min-height: 80vh;
+}
+
+
+#favourites{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.delete-icon{
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin-right: 7px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete-icon:hover{
+    background-color: black;
+}
+
+
+@media only screen and (max-width: 1260px){
+    .cards-container{
+        width: 23%;
+        min-width: 215px;
+    }
+
+    #hero-info-page{
+        width: 90%;
+    }
+
+    #hero-img{
+        height: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+
+    .cards-container{
+        min-width: 250px;
+        width: 31%;
+    }
+
+    .card-image{
+        height: 40vh;
+    }
+
+    #hero-name{
+        font-size: 2.5rem;
+        margin: 30px 0;
+    }
+
+    #hero-img{
+        height: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 850px){
+
+    .cards-container{
+        width: 47.5%;
+    }
+
+    .card-image{
+        height: 45vh;
+    }
+
+    #hero-info-page{
+        width: 95%;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+
+    #hero-info-page{
+        width: 95%;
+        height: 90%;
+        margin-top: 50px;
+    }
+
+    #hero-info-container{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #hero-img{
+        height: 45vh;
+    }
+
+    #hero-info-text{
+        width: 95%;
+    }
+}
+
+
+@media only screen and (max-width: 560px){
+
+    .cards-container{
+        width: 80%;
+        height: 57vh;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+    .card-image{
+        height: 50vh;
+    }
+
+    #fav-link, #home-link{
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+}
+
